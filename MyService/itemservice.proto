@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+package items;
+
+service ItemService {
+  rpc GetItems (ItemRequest) returns (ItemResponse);
+}
+
+message ItemRequest {
+  string requestId = 1;
+}
+
+// DTO = data transfer object
+message ItemDto {
+  int32 id = 1;
+  string name = 2;
+}
+
+message ItemResponse {
+  bool success = 1;
+  string message = 2;
+  repeated ItemDto items = 3;
+}
