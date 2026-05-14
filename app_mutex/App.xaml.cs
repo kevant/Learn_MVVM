@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows;
+using System.IO;
 
 namespace app_mutex
 {
@@ -25,11 +26,37 @@ namespace app_mutex
 
             if (!createdNew)
             {
+                MessageBox.Show(
+                   "Application is already running.",
+                   "MyWpfApp",
+                   MessageBoxButton.OK,
+                   MessageBoxImage.Information);
+
                 BringExistingInstanceToFront();
                 Shutdown();
                 return;
             }
 
+            // -----------------------------
+            // License check
+            // -----------------------------
+            string exeFolder = AppDomain.CurrentDomain.BaseDirectory;
+            string licensePath = Path.Combine(exeFolder, "license.key");
+
+            if (!File.Exists(licensePath))
+            {
+                LicenseMissingWindow dialog = new LicenseMissingWindow();
+                dialog.ShowDialog();
+
+                Shutdown();
+                return;
+            }
+
+            // -----------------------------
+            // Start main window
+            // -----------------------------
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             base.OnStartup(e);
         }
 

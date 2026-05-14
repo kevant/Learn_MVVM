@@ -1,0 +1,34 @@
+﻿<Window x:Class="app_mutex.LicenseMissingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="License Required"
+        Height="180"
+        Width="400"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+
+        <StackPanel VerticalAlignment="Center">
+
+            <TextBlock Text="License file not found."
+                       FontSize="18"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Please place the license.key file beside the application executable."
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <Button Content="Close Application"
+                    Width="160"
+                    Height="35"
+                    HorizontalAlignment="Center"
+                    Click="CloseButton_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
