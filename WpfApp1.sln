@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37111.16 d17.14
+VisualStudioVersion = 17.14.37111.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{AC237434-3D98-4F8F-BF7E-58BBEA80A32F}"
 EndProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app_mutex", "app_mutex\app_mutex.csproj", "{77CDC168-DE14-47A6-B015-687AB666DE72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{193026F6-031B-4C15-A4E2-FE08354748CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{193026F6-031B-4C15-A4E2-FE08354748CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{193026F6-031B-4C15-A4E2-FE08354748CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77CDC168-DE14-47A6-B015-687AB666DE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CDC168-DE14-47A6-B015-687AB666DE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CDC168-DE14-47A6-B015-687AB666DE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CDC168-DE14-47A6-B015-687AB666DE72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
