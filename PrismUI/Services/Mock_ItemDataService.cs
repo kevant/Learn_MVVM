@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Items;
-using PrismUI;
+using PrismUI.Model;
 
-namespace PrismUI
+namespace PrismUI.Services
 {
     internal class Mock_ItemDataService : IItemDataService
     {

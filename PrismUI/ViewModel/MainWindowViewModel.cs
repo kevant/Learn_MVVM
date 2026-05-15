@@ -1,5 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using PrismUI.Model;
+using PrismUI.Services;
 using System.CodeDom.Compiler;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;

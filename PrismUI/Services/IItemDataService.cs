@@ -5,7 +5,9 @@ To align with Prism recommendations:
 ViewModel does not directly know transport details
 Hence it relies on an interface instead
 */
-namespace PrismUI
+using PrismUI.Model;
+
+namespace PrismUI.Services
 {
     public interface IItemDataService
     {

@@ -1,5 +1,6 @@
 ﻿using Prism.Ioc;
 using Prism.Unity;
+using PrismUI.Services;
 using System.Windows;
 
 namespace PrismUI

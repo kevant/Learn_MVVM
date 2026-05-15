@@ -1,6 +1,7 @@
 ﻿using Items;
+using PrismUI.Model;
 
-namespace PrismUI
+namespace PrismUI.Services
 {
     public class ItemDataService : IItemDataService
     {
