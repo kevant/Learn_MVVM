@@ -1,9 +1,10 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using System.CodeDom.Compiler;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
-namespace WpfApp1
+namespace PrismUI
 {
     public class MainWindowViewModel : BindableBase
     {
@@ -12,19 +13,19 @@ namespace WpfApp1
         public ObservableCollection<ItemModel> Items { get; } = new ObservableCollection<ItemModel>();
 
         private string _statusMessage = "";
-
         public string StatusMessage
         {
             get => _statusMessage;
             set => SetProperty(ref _statusMessage, value);
         }
 
-        public DelegateCommand LoadItemsCommand { get; }
+        public DelegateCommand LoadItemsCommand { get; private set; }
 
         public MainWindowViewModel(IItemDataService itemDataService)
         {
             _itemDataService = itemDataService;
             LoadItemsCommand = new DelegateCommand(async () => await LoadItemsAsync());
+            //LoadItemsCommand = new DelegateCommand(Execute, CanExecute);
         }
 
         private async Task LoadItemsAsync()
@@ -41,5 +42,9 @@ namespace WpfApp1
 
             StatusMessage = result.message;
         }
+
+        // for testing
+        //private void Execute() { StatusMessage = $"Updated: {DateTime.Now}"; }
+        //private bool CanExecute() { return true; }
     }
 }

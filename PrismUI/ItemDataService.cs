@@ -1,6 +1,6 @@
 ﻿using Items;
 
-namespace WpfApp1
+namespace PrismUI
 {
     public class ItemDataService : IItemDataService
     {

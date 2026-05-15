@@ -1,10 +1,10 @@
 ﻿using Prism.Ioc;
-using Prism.Modularity;
+using Prism.Unity;
 using System.Windows;
 
-namespace WpfApp1
+namespace PrismUI
 {
-    public partial class App
+    public partial class App : PrismApplication
     {
         protected override Window CreateShell()
         {
@@ -13,12 +13,8 @@ namespace WpfApp1
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterSingleton<IItemDataService,ItemDataService>();
-        }
-
-        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
-        {
-            
+            //containerRegistry.Register<IItemDataService, ItemDataService>();
+            containerRegistry.Register<IItemDataService, Mock_ItemDataService>();
         }
     }
 }
