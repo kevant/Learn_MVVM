@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemService", "ItemService\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "license_check", "license_check\license_check.csproj", "{3000F2D1-E33C-DC6B-72B4-3DA5370181C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Check_AD_Group_Membership", "Check_AD_Group_Membership\Check_AD_Group_Membership.csproj", "{A97EC9FE-8DA6-4E0F-BAC3-675F5CDEFD5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginLogs", "LoginLogs\LoginLogs.csproj", "{DA461EC1-6A14-46E4-8175-FE003B54C64E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +42,14 @@ Global
 		{3000F2D1-E33C-DC6B-72B4-3DA5370181C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3000F2D1-E33C-DC6B-72B4-3DA5370181C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3000F2D1-E33C-DC6B-72B4-3DA5370181C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A97EC9FE-8DA6-4E0F-BAC3-675F5CDEFD5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97EC9FE-8DA6-4E0F-BAC3-675F5CDEFD5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97EC9FE-8DA6-4E0F-BAC3-675F5CDEFD5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97EC9FE-8DA6-4E0F-BAC3-675F5CDEFD5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA461EC1-6A14-46E4-8175-FE003B54C64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA461EC1-6A14-46E4-8175-FE003B54C64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA461EC1-6A14-46E4-8175-FE003B54C64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA461EC1-6A14-46E4-8175-FE003B54C64E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
