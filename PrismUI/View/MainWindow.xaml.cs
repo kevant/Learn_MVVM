@@ -19,6 +19,15 @@ namespace PrismUI
         public MainWindow()
         {
             InitializeComponent();
+
+            // This block only compiles and runs during development
+#if DEBUG
+        // Check if we are currently looking at the Visual Studio / Rider designer
+        if (System.ComponentModel.DesignerProperties.GetIsInDesignMode(this))
+        {
+            this.DataContext = new DesignMainWindowViewModel();
+        }
+#endif
         }
     }
 }

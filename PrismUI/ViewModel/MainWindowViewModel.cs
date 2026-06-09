@@ -49,4 +49,15 @@ namespace PrismUI
         //private void Execute() { StatusMessage = $"Updated: {DateTime.Now}"; }
         //private bool CanExecute() { return true; }
     }
+
+#if DEBUG
+    public class DesignMainWindowViewModel
+    {
+        public string StatusMessage { get; set; } = "Some Status";
+        public ObservableCollection<ItemModel> Items { get; set; } = new() { 
+            new ItemModel { Id = 1, Name = "Item1" }, 
+            new ItemModel { Id = 1, Name = "Item1" }
+        };
+    }
+#endif
 }
